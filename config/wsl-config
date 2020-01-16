@@ -1,0 +1,9 @@
+# To use common configuration in %APPDATA%\mintty, simply remove this file
+Font=Powerline Consolas
+FontHeight=8
+Columns=235
+Rows=66
+ThemeFile=argonaut.minttyrc
+FontWeight=700
+FontIsBold=yes
+FontSmoothing=full
