@@ -1,4 +1,4 @@
-#requires -module @{ModuleName='PowerLine';ModuleVersion='3.0.5'}, @{ModuleName='PSGit'; ModuleVersion='2.0.4'}
+#requires -module @{ModuleName='PowerLine';ModuleVersion='3.1.2'}, @{ModuleName='PSGit'; ModuleVersion='2.1.0'}
 
 # https://communary.net/2016/09/26/consoleextensions-update-now-with-more-colors/
 # Reference: https://github.com/Jaykul/PowerLine
@@ -6,7 +6,6 @@
 # https://github.com/PoshCode/Pansies - 1.4.0 required
 # https://www.nickjames.ca/my-environment-my-powershell-profile/
 # http://joonro.github.io/blog/posts/powershell-customizations.html
-
 if(!$IsWindows){
 	$Global:IsWindows = [Runtime.InteropServices.RuntimeInformation]::IsOSPlatform( [Runtime.InteropServices.OSPlatform]::Windows )
 }
@@ -18,7 +17,7 @@ if(Get-Module PowerLine -ListAvailable){
 	#	Import-module PowerLine
 		[PoshCode.Pansies.Entities]::ExtendedCharacters.Separator = $([char]0x2572)	
 		[System.Collections.Generic.List[ScriptBlock]]$global:Prompt = @(
-			{New-PromptText {Get-Elapsed} -ErrorBackgroundColor DarkRed -ErrorForegroundColor White -ForegroundColor White -BackgroundColor DarkGray  },
+			{New-PromptText {Get-Elapsed -Format "{0:mm\:ss\.ff}"} -ErrorBackgroundColor DarkRed -ErrorForegroundColor White -ForegroundColor White -BackgroundColor DarkGray  },
 			{New-PromptText {Get-Date -f "HH:mm:ss"} -ForegroundColor Black -BackgroundColor Gray  },
 			{New-PromptText { "PS" } -ForegroundColor White -BackgroundColor 'DarkGray'},
 			{New-PromptText { $($MyInvocation.HistoryId) } -ForegroundColor White -BackgroundColor 'DarkBlue'},
@@ -38,11 +37,7 @@ if(Get-Module PowerLine -ListAvailable){
 				$title
 			}
 		} -Colors DarkRed, Black, DarkGray, DarkBlue, Cyan, Yellow, DarkBlue
-	}
-
-# Chocolatey profile
-#$ChocolateyProfile="$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-#if(Test-Path($ChocolateyProfile)){ Import-Module "$ChocolateyProfile" }
+}
 
 $env:PYTHONIOENCODING = "UTF-8"
 
