@@ -13,7 +13,7 @@ if(Get-Module PowerLine -ListAvailable){
 	#	Import-module PowerLine
 	[PoshCode.Pansies.Entities]::ExtendedCharacters.Separator = $([char]0x2572)	
 	[System.Collections.Generic.List[ScriptBlock]]$global:Prompt = @(
-		{New-PromptText {Get-Elapsed -Format "{0:mm\m\:ss\s\.ffff}ms" } -ErrorBackgroundColor DarkRed -ErrorForegroundColor White -ForegroundColor White -BackgroundColor DarkGray  },
+		{New-PromptText {Get-Elapsed -Format "{0:mm\m\ ss\.ffff}s" } -ErrorBackgroundColor DarkRed -ErrorForegroundColor White -ForegroundColor White -BackgroundColor DarkGray  },
 		{New-PromptText {Get-Date -f "HH:mm:ss"} -ForegroundColor Black -BackgroundColor Gray  },
 		{New-PromptText { $($MyInvocation.HistoryId) } -ForegroundColor White -BackgroundColor 'DarkGray'},
 		#{New-PromptText { $($MyInvocation.HistoryId) } -ForegroundColor White -BackgroundColor 'DarkBlue'},
