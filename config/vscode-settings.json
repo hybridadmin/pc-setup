@@ -1,16 +1,22 @@
 {
-    "editor.fontSize": 11,
+    "editor.fontSize": 10,
     "remote.SSH.showLoginTerminal": true,
-    "terminal.integrated.fontSize": 11,
+    "terminal.integrated.fontSize": 10,
     "search.showLineNumbers": true,
-    "debug.console.fontSize": 11,
+    "debug.console.fontSize": 10,
     "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\bash.exe",
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
     "editor.fontFamily": "Roboto Mono for Powerline, Consolas, 'Courier New', monospace",
     "workbench.tips.enabled": false,
-    "window.openFilesInNewWindow": "on",
     "terminal.integrated.fontFamily": "Roboto Mono for Powerline",
-    "workbench.iconTheme": "ayu",
+    "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "afterDelay",
-    "workbench.colorTheme": "Egoist One"
+    "workbench.colorTheme": "One Monokai",
+    "terminal.integrated.rendererType": "dom",
+    "window.openFoldersInNewWindow": "off",
+    "window.openFilesInNewWindow": "off",
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": true,
+    "window.openWithoutArgumentsInNewWindow": "off",
+    "extensions.ignoreRecommendations": true
 }
