@@ -18,5 +18,6 @@
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": true,
     "window.openWithoutArgumentsInNewWindow": "off",
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "editor.copyWithSyntaxHighlighting": false
 }
