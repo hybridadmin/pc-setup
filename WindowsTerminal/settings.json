@@ -6,7 +6,7 @@
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 {
-    "$schema": "https://raw.githubusercontent.com/microsoft/terminal/release-1.2/doc/cascadia/profiles.schema.json",
+    "$schema": "https://raw.githubusercontent.com/microsoft/terminal/master/doc/cascadia/profiles.schema.json",
 
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "initialCols" : 210,
@@ -110,6 +110,27 @@
             "yellow" : "#FFB900"
         },
         {
+            "name": "PaulMillr",
+            "black": "#2a2a2a",
+            "red": "#ff0000",
+            "green": "#79ff0f",
+            "yellow": "#e7bf00",
+            "blue": "#396bd7",
+            "purple": "#b449be",
+            "cyan": "#66ccff",
+            "white": "#bbbbbb",
+            "brightBlack": "#666666",
+            "brightRed": "#ff0080",
+            "brightGreen": "#66ff66",
+            "brightYellow": "#f3d64e",
+            "brightBlue": "#709aed",
+            "brightPurple": "#db67e6",
+            "brightCyan": "#7adff2",
+            "brightWhite": "#ffffff",
+            "background": "#000000",
+            "foreground": "#f2f2f2"
+          },
+          {
             "name": "MaterialOcean",
             "black": "#546e7a",
             "red": "#ff5370",
@@ -129,7 +150,29 @@
             "brightWhite": "#ffffff",
             "background": "#0f111a",
             "foreground": "#8f93a2"
+          },
+          {
+            "name": "MaterialDarker",
+            "black": "#000000",
+            "red": "#ff5370",
+            "green": "#c3e88d",
+            "yellow": "#ffcb6b",
+            "blue": "#82aaff",
+            "purple": "#c792ea",
+            "cyan": "#89ddff",
+            "white": "#ffffff",
+            "brightBlack": "#545454",
+            "brightRed": "#ff5370",
+            "brightGreen": "#c3e88d",
+            "brightYellow": "#ffcb6b",
+            "brightBlue": "#82aaff",
+            "brightPurple": "#c792ea",
+            "brightCyan": "#89ddff",
+            "brightWhite": "#ffffff",
+            "background": "#212121",
+            "foreground": "#eeffff"
           }
+
     ],
 
     // Add custom keybindings to this array.
