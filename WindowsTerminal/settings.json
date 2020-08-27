@@ -24,6 +24,8 @@
     // If enabled, formatted data is also copied to your clipboard
     "copyFormatting": false,
 
+    "useTabSwitcher": true,
+
     // A profile specifies a command to execute paired with information about how it should look and feel.
     // Each one of them will appear in the 'New Tab' dropdown,
     //   and can be invoked from the commandline with `wt.exe -p xxx`
@@ -47,7 +49,7 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
-                "hidden": false
+                "hidden": true
             },
             {
                 // Make changes here to the cmd.exe profile.
