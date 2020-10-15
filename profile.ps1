@@ -1,4 +1,3 @@
-#requires -module @{ModuleName='PSGit'; ModuleVersion='2.1.0'}
 
 # https://communary.net/2016/09/26/consoleextensions-update-now-with-more-colors/
 # Reference: https://github.com/Jaykul/PowerLine
