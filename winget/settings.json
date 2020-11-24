@@ -1,0 +1,13 @@
+{
+    // For documentation on these settings, see: https://aka.ms/winget-settings
+    "$schema": "https://aka.ms/winget-settings.schema.json",
+    // "source": {
+    //    "autoUpdateIntervalInMinutes": 5
+    // },
+
+    "experimentalFeatures": {
+        "experimentalCmd": true,
+        "experimentalArg": true,
+        "experimentalMSStore": true
+    }
+}
