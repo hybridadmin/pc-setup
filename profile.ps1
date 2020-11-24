@@ -33,7 +33,7 @@
 #		}
 #	} -Colors DarkRed, Black, DarkGray, DarkBlue, Cyan, Yellow, DarkBlue
 #}
-$Duration=Get-Elapsed -Format "{0:mm\m\ ss\.ffff}s"
+#$Duration=Get-Elapsed -Format "{0:mm\m\ ss\.ffff}s"
 function global:prompt {
     $pwd = $ExecutionContext.SessionState.Path.CurrentLocation
     $startInfo = New-Object System.Diagnostics.ProcessStartInfo
@@ -80,5 +80,9 @@ if($PSVersionTable.PSVersion.Major -ge 5){
 	Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 	Set-PSReadlineOption -ShowToolTips
 	Set-PSReadlineOption -BellStyle None
+
+    if(($PSVersionTable.PSVersion.Major -ge 7) -and ($PSVersionTable.PSVersion.Minor -ge 1) ){
+        Set-PSReadLineOption -PredictionSource History
+    }
 }
 #Set-Location C:\Scripts
