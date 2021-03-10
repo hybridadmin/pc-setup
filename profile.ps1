@@ -1,6 +1,4 @@
 
-# https://communary.net/2016/09/26/consoleextensions-update-now-with-more-colors/
-# Reference: https://github.com/Jaykul/PowerLine
 # https://gist.github.com/bgelens/f9aa8b376bee90e9f38a06f28e254319#file-powerline-config-ps1
 # https://github.com/PoshCode/Pansies - 1.4.0 required
 # https://www.nickjames.ca/my-environment-my-powershell-profile/
@@ -38,7 +36,7 @@ function global:prompt {
     $pwd = $ExecutionContext.SessionState.Path.CurrentLocation
     $startInfo = New-Object System.Diagnostics.ProcessStartInfo
     $startInfo.FileName = "powerline-go"
-    $startInfo.Arguments = "-shell bare"
+    $startInfo.Arguments = "-shell bare -trim-ad-domain"
     $startInfo.Environment["TERM"] = "xterm-256color"
     $startInfo.CreateNoWindow = $true
     $startInfo.StandardOutputEncoding = [System.Text.Encoding]::UTF8
