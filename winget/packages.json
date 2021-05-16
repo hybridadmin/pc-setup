@@ -1,0 +1,44 @@
+{
+	"$schema" : "https://aka.ms/winget-packages.schema.1.0.json",
+	"CreationDate" : "2021-05-16T19:15:16.531-00:00",
+	"Sources" : 
+	[
+		{
+			"Packages" : 
+			[
+				{
+					"Id" : "Microsoft.VC++2015-2019Redist-x64"
+				},
+				{
+					"Id" : "Microsoft.VC++2015-2019Redist-x86"
+				},
+				{
+					"Id" : "Microsoft.WindowsTerminalPreview"
+				},
+				{
+					"Id" : "Microsoft.VisualStudioCodeInsiders"
+				},
+				{
+					"Id" : "7zip.7zip"
+				},
+				{
+					"Id" : "GitHub.cli"
+				},
+				{
+					"Id" : "VSCodium.VSCodium"
+				},
+				{
+					"Id" : "Microsoft.PowerShell"
+				}
+			],
+			"SourceDetails" : 
+			{
+				"Argument" : "https://winget.azureedge.net/cache",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			}
+		}
+	],
+	"WinGetVersion" : "0.3.11201"
+}
